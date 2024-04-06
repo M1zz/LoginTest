@@ -13,7 +13,7 @@ import KakaoSDKAuth
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+    // 외부의 인증을 진행하는 부분
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         KakaoSDK.initSDK(appKey: "9e9293c196d53f290157d5da8e09bdc1")

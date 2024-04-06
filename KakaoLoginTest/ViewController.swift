@@ -11,15 +11,27 @@ import KakaoSDKUser
 class ViewController: UIViewController {
 
     @IBOutlet weak var kakaotalkLogin: UIButton!
+    @IBOutlet weak var kakaotalkLogout: UIButton!
+    private var userLoginState: Bool = false
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        userLoginState = getUserLoginState()
+        
+        // 로그인이 가능할 경우
         if !UserApi.isKakaoTalkLoginAvailable() {
-            kakaotalkLogin.isHidden = true
+            // 현재 사용자의 상태가 로그인이 된 경우
+            if userLoginState {
+                kakaotalkLogin.isHidden = true
+            } else {
+                kakaotalkLogout.isHidden = true
+            }
         }
-        // Do any additional setup after loading the view.
     }
 
+    // SNS 로그인이 동작해야하는 함수
     @IBAction func didTapKakaoLoginButton(_ sender: Any) {
         print("\(UserApi.isKakaoTalkLoginAvailable()) button clicked")
         if (UserApi.isKakaoTalkLoginAvailable()) {
@@ -34,6 +46,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // SNS 로그아웃 버튼이 동작해야하는 함수
     @IBAction func didTapKakaoLogoutButton(_ sender: Any) {
         UserApi.shared.logout {(error) in
             if let error = error {
@@ -45,7 +58,13 @@ class ViewController: UIViewController {
         }
     }
     
+    // 사용자의 로그인 상태가 불러와지는 코드
+    private func getUserLoginState() -> Bool {
+        // 저장되어있는 사용자의 로그인 상태를 불러오는 코드
+        return true
+    }
     
+    // 로그인 아후에 사용자의 정보를 가져오는 함수
     private func kakaoGetUserInfo() {
         UserApi.shared.me() { (user, error) in
             if let error = error {
@@ -72,8 +91,8 @@ class ViewController: UIViewController {
         }
     }
     
+    // SNS로그인 동의를 요청하는 함수
     private func kakaoRequestAgreement() {
-        // 추가 항목 동의 받기(사용자가 동의하지않은 항목에 대한 추가 동의 요청
         UserApi.shared.me() { (user, error) in
             if let error = error {
                 print(error)
@@ -93,12 +112,6 @@ class ViewController: UIViewController {
                 if scopes.count > 0 {
                     print("사용자에게 추가 동의를 받아야 합니다.")
 
-                    // OpenID Connect 사용 시
-                    // scope 목록에 "openid" 문자열을 추가하고 요청해야 함
-                    // 해당 문자열을 포함하지 않은 경우, ID 토큰이 재발급되지 않음
-                    // scopes.append("openid")
-
-                    //scope 목록을 전달하여 카카오 로그인 요청
                     UserApi.shared.loginWithKakaoAccount(scopes: scopes) { (_, error) in
                         if let error = error {
                             print(error)
