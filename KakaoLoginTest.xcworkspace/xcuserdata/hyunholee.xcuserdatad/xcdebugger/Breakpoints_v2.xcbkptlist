@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D0A900E1-9DF3-44B7-89CC-474E1D40AE7B"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3AFBC7C2-9508-4F1E-BB4E-DB0553FCE06F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KakaoLoginTest/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "didTapKakaoLoginButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3AFBC7C2-9508-4F1E-BB4E-DB0553FCE06F - 64631fa549f286cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;KakaoSDKAuth.OAuthToken&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in KakaoLoginTest.ViewController.didTapKakaoLoginButton(Any) -&gt; ()"
+                  moduleName = "KakaoLoginTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hyunholee/Documents/workspace/code/KakaoLoginTest/KakaoLoginTest/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24">
+               </Location>
+               <Location
+                  uuid = "3AFBC7C2-9508-4F1E-BB4E-DB0553FCE06F - 64631fa549f286cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;KakaoSDKAuth.OAuthToken&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in KakaoLoginTest.ViewController.didTapKakaoLoginButton(Any) -&gt; ()"
+                  moduleName = "KakaoLoginTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hyunholee/Documents/workspace/code/KakaoLoginTest/KakaoLoginTest/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

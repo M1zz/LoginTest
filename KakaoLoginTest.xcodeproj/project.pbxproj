@@ -13,9 +13,11 @@
 		58D2CAD02BA9AD3300285434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D2CACE2BA9AD3300285434 /* Main.storyboard */; };
 		58D2CAD22BA9AD3400285434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D2CAD12BA9AD3400285434 /* Assets.xcassets */; };
 		58D2CAD52BA9AD3400285434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D2CAD32BA9AD3400285434 /* LaunchScreen.storyboard */; };
+		F906B8A716458273142F2770 /* Pods_KakaoLoginTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC01F1DB0F3F4B89BB451A /* Pods_KakaoLoginTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04DC01F1DB0F3F4B89BB451A /* Pods_KakaoLoginTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoLoginTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D2CAC52BA9AD3300285434 /* KakaoLoginTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoLoginTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D2CAC82BA9AD3300285434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D2CACA2BA9AD3300285434 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		58D2CAD12BA9AD3400285434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D2CAD42BA9AD3400285434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58D2CAD62BA9AD3400285434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DEA5A7F8E64B259042280CF /* Pods-KakaoLoginTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoLoginTest.debug.xcconfig"; path = "Target Support Files/Pods-KakaoLoginTest/Pods-KakaoLoginTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F90F0D085CD0E1BA3FFC2CB5 /* Pods-KakaoLoginTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoLoginTest.release.xcconfig"; path = "Target Support Files/Pods-KakaoLoginTest/Pods-KakaoLoginTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F906B8A716458273142F2770 /* Pods_KakaoLoginTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				58D2CAC72BA9AD3300285434 /* KakaoLoginTest */,
 				58D2CAC62BA9AD3300285434 /* Products */,
+				7C57957990B0DE64EA921CC3 /* Pods */,
+				9BDE03C502494E2DA67677CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = KakaoLoginTest;
 			sourceTree = "<group>";
 		};
+		7C57957990B0DE64EA921CC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DEA5A7F8E64B259042280CF /* Pods-KakaoLoginTest.debug.xcconfig */,
+				F90F0D085CD0E1BA3FFC2CB5 /* Pods-KakaoLoginTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9BDE03C502494E2DA67677CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04DC01F1DB0F3F4B89BB451A /* Pods_KakaoLoginTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58D2CAD92BA9AD3400285434 /* Build configuration list for PBXNativeTarget "KakaoLoginTest" */;
 			buildPhases = (
+				CF37A0DFA6AE1204900D38FE /* [CP] Check Pods Manifest.lock */,
 				58D2CAC12BA9AD3300285434 /* Sources */,
 				58D2CAC22BA9AD3300285434 /* Frameworks */,
 				58D2CAC32BA9AD3300285434 /* Resources */,
+				2DF65BC240D8296E70CFAC78 /* [CP] Embed Pods Frameworks */,
+				BD9D27961EF8460065DFAA3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DF65BC240D8296E70CFAC78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoLoginTest/Pods-KakaoLoginTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoLoginTest/Pods-KakaoLoginTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoLoginTest/Pods-KakaoLoginTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD9D27961EF8460065DFAA3C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoLoginTest/Pods-KakaoLoginTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoLoginTest/Pods-KakaoLoginTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoLoginTest/Pods-KakaoLoginTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF37A0DFA6AE1204900D38FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoLoginTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58D2CAC12BA9AD3300285434 /* Sources */ = {
@@ -287,12 +373,14 @@
 		};
 		58D2CADA2BA9AD3400285434 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DEA5A7F8E64B259042280CF /* Pods-KakaoLoginTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KakaoLoginTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -315,12 +403,14 @@
 		};
 		58D2CADB2BA9AD3400285434 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F90F0D085CD0E1BA3FFC2CB5 /* Pods-KakaoLoginTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KakaoLoginTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
